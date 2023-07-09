@@ -11,8 +11,12 @@
 // reduce function takes two arguments, first is arrow function and second is initial value
 // example: [1,2,3].reduce((sum, num) => sum + num, 0) => 6 (0 is initial value)
 function reverse(str) {
+  debugger;
   return str.split("").reduce((rev, char) => char + rev, "");
 }
+console.log(reverse("asdf"));
+
+module.exports = reverse;
 
 // *****Option 1.2:
 // function reverse(str) {
@@ -42,5 +46,3 @@ function reverse(str) {
 //   }
 //   return reversed;
 // }
-
-module.exports = reverse;
