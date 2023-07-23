@@ -15,6 +15,7 @@ function capitalize(str) {
   return w.join(" ");
 }
 
+// Option-2:
 // function capitalize(str) {
 //   const words = [];
 //   const strArr = str.split(" ");
@@ -25,6 +26,18 @@ function capitalize(str) {
 //   return words.join(" ");
 // }
 
+// Option-2.2:
+// function capitalize(str) {
+//   const words = [];
+//
+//   for (let word of str.split(' ')) {
+//     words.push(word[0].toUpperCase() + word.slice(1));
+//   }
+//
+//   return words.join(' ');
+// }
+
+// Option-3:
 // function capitalize(str) {
 //   let result = str[0].toUpperCase();
 
@@ -40,13 +53,3 @@ function capitalize(str) {
 // }
 
 module.exports = capitalize;
-
-// function capitalize(str) {
-//   const words = [];
-//
-//   for (let word of str.split(' ')) {
-//     words.push(word[0].toUpperCase() + word.slice(1));
-//   }
-//
-//   return words.join(' ');
-// }
