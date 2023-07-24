@@ -15,18 +15,20 @@ function capitalize(str) {
   return w.join(" ");
 }
 
-function capitalize(str) {
-  const strArr = str[0].toUpperCase();
-  for (let i = 1; i < str.length; i++) {
-    if (str.length[i - 1] === " ") {
-      strArr += str[i].toUpperCase();
-    } else {
-      strArr += str[i];
-    }
-  }
-  return strArr;
-}
-// Option-2:
+// Option-2.1:
+// function capitalize(str) {
+//   const strArr = str[0].toUpperCase();
+//   for (i of str) {
+//     if (str.length[i - 1] === " ") {
+//       strArr += str[i].toUpperCase();
+//     } else {
+//       strArr += str[i];
+//     }
+//   }
+//   return strArr;
+// }
+
+// Option-2.2:
 // function capitalize(str) {
 //   const words = [];
 //   const strArr = str.split(" ");
