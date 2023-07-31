@@ -71,4 +71,6 @@ function matrix(n) {
   return results;
 }
 
+console.log(matrix(4));
+
 module.exports = matrix;
