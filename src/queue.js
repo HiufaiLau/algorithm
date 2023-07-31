@@ -8,8 +8,12 @@
 //     q.add(1);
 //     q.remove(); // returns 1;
 
-// create an new instance
+// create an new instance of the class
+// instance is an object created from a class for exmple:
+// const q = new Queue();
+// q is an instance of the Queue class
 // create an array to store the data in the class
+// the array is an instance property called data
 class Queue {
   constructor() {
     this.data = [];
