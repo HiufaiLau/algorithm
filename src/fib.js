@@ -32,6 +32,34 @@ function memoize(fn) {
   };
 }
 
+function memoize(fn) {
+  const cache = {};
+  // ...arg is a rest operator,
+  // it will take all the arguments
+  // and put them into an array
+  return function (...args) {
+    if (cache[args]) {
+      return cache[args];
+    }
+
+    const result = fn.apply(this, args);
+    cache[args] = result;
+
+    return result;
+  }else{
+    if (n < 2) {
+      return n;
+    }
+  
+    return fib(n - 1) + fib(n - 2);
+  }
+  
+  const fib = memoize(slowFib);
+  };
+}
+
+console.log();
+
 // this single recursive solution will cause a exponantial time complexity
 function slowFib(n) {
   if (n < 2) {
